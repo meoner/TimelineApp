@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import {button_style} from '../styles/styles';
+import {button_style} from './styles';
 
 function Button(params) {
   return (
