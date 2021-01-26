@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {View, TextInput} from 'react-native';
 import {inputarea_style} from './styles';
 
-function InputArea({placeholder, keyboardType, secureText}) {
+function InputArea({placeholder, keyboardType, secureText, onText}) {
   const [focus, setFocus] = useState(false);
 
   return (
@@ -18,7 +18,7 @@ function InputArea({placeholder, keyboardType, secureText}) {
         placeholder={placeholder}
         keyboardType={keyboardType}
         secureTextEntry={secureText}
-        onChangeText={(text) => console.log(text)}
+        onChangeText={onText}
       />
     </View>
   );

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "299447942290",
+    "project_id": "kodluyoruzchat",
+    "storage_bucket": "kodluyoruzchat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:299447942290:android:a7fad00136b67e5b0d3a4b",
+        "android_client_info": {
+          "package_name": "com.week_5"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "299447942290-4nh6ftnb99bkvn704chegeadtrdoq63s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAP9Z8vonWpMYfd5kHsjJfhG7zAcC8AjiY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "299447942290-4nh6ftnb99bkvn704chegeadtrdoq63s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
