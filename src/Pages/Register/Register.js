@@ -5,27 +5,39 @@ import {
   Platform,
   ScrollView,
   Alert,
+  Text,
 } from 'react-native';
 import {Header} from './components';
 import {InputArea, Button} from '../components';
 import {register_style} from './styles/styles';
-import auth from '@react-native-firebase/auth';
+import {useSign} from '../hooks/useSign';
+
 // TODO: add custom hooks
+
 function RegisterPage({navigation}) {
   const [email, setEmail] = useState('');
-  const [name, setName] = useState('');
-  const [surname, setSurname] = useState('');
   const [password, setPassword] = useState('');
 
-  function signUp() {
-    auth()
-      .createUserWithEmailAndPassword(email, password)
-      .then((response) => console.log(response))
-      .catch(({code, message}) => errorMessage(code, message));
+  const {loading, error, response, signUp, _, errorReset} = useSign();
+
+  function register() {
+    signUp(email, password);
   }
-  function errorMessage(code, message) {
-    Alert.alert(code, message);
+  if (response) {
+    navigation.navigate('Login');
   }
+  if (loading) {
+    return (
+      <View>
+        <Text>Loading...</Text>
+      </View>
+    );
+  }
+  if (error) {
+    Alert.alert('Error', error.message);
+    errorReset();
+  }
+
   return (
     <KeyboardAvoidingView
       behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
@@ -49,7 +61,7 @@ function RegisterPage({navigation}) {
               secureText={true}
               onText={(text) => setPassword(text)}
             />
-            <Button onSelect={signUp} />
+            <Button onSelect={register} />
           </View>
         </ScrollView>
       </View>
