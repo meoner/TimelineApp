@@ -1131,6 +1131,11 @@
   resolved "https://registry.yarnpkg.com/@react-native-firebase/auth/-/auth-10.5.1.tgz#fb44d4aaa60e99aa782c0644ac291c5963f92d89"
   integrity sha512-CPqTYQ0fMHGST663I9fW43Yj7uA7w0nNxXQtFxr4oBCs4ykWzy89mqLeiBSMtWufkrrPE0nFoTdJ1YJiQchOxg==
 
+"@react-native-firebase/database@^10.5.1":
+  version "10.5.1"
+  resolved "https://registry.yarnpkg.com/@react-native-firebase/database/-/database-10.5.1.tgz#f5f9453c5c3db692f1d963766cd04645aad30a9a"
+  integrity sha512-jhBUbunCO2HoXPO1mom214A9wdtjLfhNgcaN9Z3x3TmObGZNm7xQ9FYINAXqKmb1iLMMZxlmR0CBD/2uUv3Chw==
+
 "@react-navigation/core@^5.15.1":
   version "5.15.1"
   resolved "https://registry.yarnpkg.com/@react-navigation/core/-/core-5.15.1.tgz#dab5192277c606d9acbea511dac407c2834b5fbe"
@@ -5071,6 +5076,11 @@ mkdirp@^0.5.1:
   integrity sha512-NKmAlESf6jMGym1++R0Ra7wvhV+wFW63FaSOFPwRahvea0gMUcGUhVeAg/0BC0wiv9ih5NYPB1Wn1UEI1/L+xQ==
   dependencies:
     minimist "^1.2.5"
+
+moment@^2.29.1:
+  version "2.29.1"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.1.tgz#b2be769fa31940be9eeea6469c075e35006fa3d3"
+  integrity sha512-kHmoybcPV8Sqy59DwNDY3Jefr64lK/by/da0ViFcuA4DH0vQg5Q6Ze5VimxkfQNSC+Mls/Kx53s7TjP1RhFEDQ==
 
 ms@2.0.0:
   version "2.0.0"

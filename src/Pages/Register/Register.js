@@ -12,8 +12,6 @@ import {InputArea, Button} from '../components';
 import {register_style} from './styles/styles';
 import {useSign} from '../hooks/useSign';
 
-// TODO: add custom hooks
-
 function RegisterPage({navigation}) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
