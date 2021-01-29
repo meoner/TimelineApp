@@ -16,6 +16,8 @@ import {useSign} from '../hooks/useSign';
 function RegisterPage({navigation}) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [name, setName] = useState('');
+  const [surname, setSurname] = useState('');
 
   const {loading, error, response, signUp, _, errorReset} = useSign();
 

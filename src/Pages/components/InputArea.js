@@ -19,6 +19,7 @@ function InputArea({placeholder, keyboardType, secureText, onText}) {
         keyboardType={keyboardType}
         secureTextEntry={secureText}
         onChangeText={onText}
+        autoCapitalize="none"
       />
     </View>
   );
