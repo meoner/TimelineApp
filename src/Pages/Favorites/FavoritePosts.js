@@ -3,6 +3,7 @@ import {View, Text, FlatList} from 'react-native';
 import auth from '@react-native-firebase/auth';
 import database from '@react-native-firebase/database';
 import {post_item_styles} from '../Chat/styles/styles';
+import {Empty} from '../components';
 import moment from 'moment';
 import 'moment/locale/tr';
 
@@ -51,6 +52,7 @@ function FavoritePosts() {
         keyExtractor={(_, i) => i.toString()}
         data={favList}
         renderItem={renderPost}
+        ListEmptyComponent={() => <Empty />}
       />
     </View>
   );

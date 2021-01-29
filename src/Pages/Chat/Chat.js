@@ -3,6 +3,7 @@ import {View, Button, FlatList, TextInput, Alert} from 'react-native';
 import database from '@react-native-firebase/database';
 import auth from '@react-native-firebase/auth';
 import {PostItem, Header} from './components';
+import {Empty} from '../components';
 import {text_area} from './styles/styles';
 import 'moment/locale/tr';
 
@@ -90,6 +91,7 @@ function Chat({navigation}) {
         keyExtractor={(_, i) => i.toString()}
         data={postData}
         renderItem={renderPost}
+        ListEmptyComponent={() => <Empty />}
       />
       <View />
       <View style={text_area.inputContainer}>

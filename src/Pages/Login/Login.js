@@ -3,6 +3,7 @@ import {View, Text, TouchableOpacity, StyleSheet, Alert} from 'react-native';
 import {InputArea, Button} from '../components';
 import {Header} from './components/Header';
 import {useSign} from '../hooks/useSign';
+import {Loading} from '../components';
 
 // TODO: this file  refactoring
 function LoginPage({navigation}) {
@@ -18,11 +19,7 @@ function LoginPage({navigation}) {
     navigation.navigate('Chat');
   }
   if (loading) {
-    return (
-      <View>
-        <Text>Loading...</Text>
-      </View>
-    );
+    return <Loading />;
   }
   if (error) {
     Alert.alert('Error', error.message);

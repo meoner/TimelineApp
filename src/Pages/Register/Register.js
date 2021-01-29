@@ -10,6 +10,7 @@ import {
 import {Header} from './components';
 import {InputArea, Button} from '../components';
 import {register_style} from './styles/styles';
+import {Loading} from '../components';
 import {useSign} from '../hooks/useSign';
 
 function RegisterPage({navigation}) {
@@ -25,11 +26,7 @@ function RegisterPage({navigation}) {
     navigation.navigate('Login');
   }
   if (loading) {
-    return (
-      <View>
-        <Text>Loading...</Text>
-      </View>
-    );
+    return <Loading />;
   }
   if (error) {
     Alert.alert('Error', error.message);
