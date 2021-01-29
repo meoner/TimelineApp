@@ -1,19 +1,26 @@
 import React from 'react';
 import {View, TouchableOpacity, Text} from 'react-native';
+import {header} from '../styles/styles';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 function Header({goFavorites, logOut}) {
   return (
-    <View style={{flexDirection:'row', justifyContent:'space-between'}}>
+    <View style={header.container}>
       <TouchableOpacity onPress={goFavorites}>
-        <Text>Begen</Text>
+        <Icon
+          name="cards-heart"
+          color="#eb5e0b"
+          size={20}
+          style={{alignSelf: 'center'}}
+        />
+        <Text>Beğeniler</Text>
       </TouchableOpacity>
       <TouchableOpacity onPress={logOut}>
-        <Text>çıkış</Text>
+        <Icon name="logout" color="#eb5e0b" size={40} />
       </TouchableOpacity>
     </View>
   );
 }
 export {Header};
 
-//<Icon name="rocket" color="black" size={20} />
+//<Icon name="logout" color="black" size={20} />
