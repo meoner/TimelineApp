@@ -9,3 +9,11 @@ https://user-images.githubusercontent.com/32526108/106321361-32f4ab80-6285-11eb-
 
 Gönderi Ekleme ve Favorilere alma sayfası:
 https://user-images.githubusercontent.com/32526108/106321329-2a9c7080-6285-11eb-9b20-041a53413c2b.mp4
+
+ ## Eklenenler
+ - Login, Register, Chat ve Favorites sayfaları.
+ - Login ve Register sayfalarında herhangi hata kullanıcıya bildiriliyor.
+ - Chat sayfasında 140 karakterlik gönderiler paylaşılabiliyor ve boş gönderi atılmıyor.
+ - Bir gönderi sadece bir kez beğenilir.
+ - Herkes sadece kendi favorilerini görebilir.
+ - Çıkış yapıldığında login ekranına dönülür.
